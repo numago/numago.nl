@@ -6,9 +6,9 @@
         <div class="max-w-sm rounded overflow-hidden shadow-lg mt-20 bg-white">
           <div class="px-6 py-4 flex flex-wrap justify-center">
             <img
-              src="~/assets/images/numago-logo.svg"
+              src="~/assets/images/numago-logo-final.svg"
               alt=""
-              class="mt-4 h-20"
+              class="mt-4 h-20 w-3/4"
             />
             <p class="text-gray-700 text-base mt-4">
               <b>Numago - Internetbureau</b> <br />
@@ -50,7 +50,7 @@
           </a>
           <!-- <n-link to="about"> -->
           <a :href="whatsappLink">
-            <button class="_green-button _block-button" disabled>
+            <button class="_green-button _block-button">
               <svg
                 class="fill-current w-4 h-4 mr-2"
                 xmlns="http://www.w3.org/2000/svg"
@@ -61,7 +61,7 @@
                   fill-rule="evenodd"
                 />
               </svg>
-              <span>Whatsapp</span>
+              <span>WhatsApp</span>
             </button>
           </a>
           <!-- </n-link> -->
@@ -85,7 +85,7 @@ export default Vue.extend({
   data() {
     return {
       email: 'info@numago.nl',
-      whatsappLink: 'https://whatsapp.com/random',
+      whatsappLink: ' https://wa.me/message/3Y7D4GVKZSRUO1',
     }
   },
 })
