@@ -80,6 +80,11 @@ export default {
       defaultLineHeights: true,
       standardFontWeights: true,
     },
+    theme: {
+      extend: {
+        colors: {},
+      },
+    },
   },
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
