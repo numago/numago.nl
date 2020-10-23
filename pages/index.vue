@@ -1,12 +1,12 @@
 <template>
-  <div class="container mx-auto bg-black-200 h-screen">
+  <div class="container mx-auto px-3 bg-black-200 h-screen">
     <!-- <div class="flex justify-center"></div> -->
     <div class="flex justify-center align-center">
       <div>
         <div class="max-w-sm rounded overflow-hidden shadow-lg mt-20 bg-white">
           <div class="px-6 py-4 flex flex-wrap justify-center">
             <img
-              src="~/assets/images/numago-logo-final.svg"
+              src="~/assets/images/numago-logo.svg"
               alt=""
               class="mt-4 h-20 w-3/4"
             />
