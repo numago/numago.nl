@@ -3,7 +3,9 @@
     <!-- <div class="flex justify-center"></div> -->
     <div class="flex justify-center align-center">
       <div>
-        <div class="max-w-sm rounded overflow-hidden shadow-lg mt-20 bg-white">
+        <div
+          class="max-w-sm rounded overflow-hidden shadow-lg mt-20 pb-4 bg-white"
+        >
           <div class="px-6 py-4 flex flex-wrap justify-center">
             <img
               src="~/assets/images/numago-logo.svg"
@@ -16,19 +18,46 @@
             </p>
             <div class="w-full text-gray-700">
               <ul class="mt-4">
-                <li class="">E-mail: {{ email }}</li>
-                <li>KVK: 76360601</li>
+                <li class="_list-item">
+                  <svg
+                    class="fill-current w-h h-4 mr-2 inline-block justify-center"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                  >
+                    <title>Email</title>
+                    <path
+                      d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+                    />
+                    <path
+                      d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+                    />
+                  </svg>
+                  {{ email }}
+                </li>
+                <li class="_list-item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 652 243"
+                    class="fill-current w-h h-3 mr-2 inline-block"
+                  >
+                    <title>KVK</title>
+                    <path
+                      d="M528.55 143c-1.52-2.5-2.6-3.91-3.91-4.67a6.64 6.64 0 00-8.91 2.5c-1.08 2.06-1.08 6.52-1.08 8v62.87h-71V34.14h71V109l54.11-74.87h78.13l-61.18 78.13L652 211.7h-81zm-252.43 68.7h80.2l65.85-177.45h-71.83l-31 98.88h-.54l-30.75-99H213.2zm-148.76 0h81L142 112.27l61.18-78.13h-78.1L71 109V34.14H0v177.45h71v-62.81c0-1.52 0-6.08 1.09-8a6.64 6.64 0 018.91-2.5c1.3.76 2.39 2.17 3.91 4.67z"
+                    />
+                  </svg>
+                  76360601
+                </li>
               </ul>
             </div>
             <!-- <div class="font-bold text-xl mb-2 mt-10 text-center">
             Binnekort online..
           </div> -->
           </div>
-          <div
+          <!-- <div
             class="font-bold text-grey-700 text-xl py-3 mt-2 mb-2 text-center"
           >
             Binnenkort online..
-          </div>
+          </div> -->
         </div>
         <div class="max-w-sm pt-6">
           <a :href="'mailto:' + email">
@@ -92,16 +121,14 @@ export default Vue.extend({
 </script>
 
 <style lang="postcss" scoped>
-const Color = require('color')
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-@apply min-h-screen flex justify-center items-center text-center mx-auto;
-}*/
 .badge {
   @apply inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700;
   &:hover {
     @apply bg-gray-300;
   }
+}
+._list-item {
+  @apply py-1 w-full rounded inline-flex items-center;
 }
 ._block-button {
   @apply font-bold py-3 px-4 w-full rounded inline-flex items-center justify-center mb-3 shadow-lg text-white;
